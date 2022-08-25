@@ -16,12 +16,12 @@ function Lists(props) {
   const [list, setList] = useState([]);
   const [done, setDone] = useState([]);
   const [open, setOpen] = useState(false);
-  const [deleteMsg, setDeleteMsg] = useState(null);
+  // const [deleteMsg, setDeleteMsg] = useState(null);
 
   useEffect(() => {
     setList(datas);
     setDone(donedata);
-    setDeleteMsg(deletes);
+    // setDeleteMsg(deletes);
   }, [datas, donedata, deletes]);
 
   useEffect(() => {
@@ -70,7 +70,7 @@ function Lists(props) {
           );
         })}
       </List>
-      <div>{deleteMsg}</div>
+      {/* <div>{deleteMsg}</div> */}
       <Button
         variant="text"
         style={{ margin: "10px", fontSize: "20px", color: "#5f6368" }}
